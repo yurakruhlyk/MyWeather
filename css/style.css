@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  background-color: #21374B;
+  color: #fff;
+  transition: background-color 2s ease 1s, color 2s ease 1s;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper[data-hour='0'],
+.wrapper[data-hour='1'],
+.wrapper[data-hour='2'],
+.wrapper[data-hour='3'] {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+.wrapper[data-hour='4'],
+.wrapper[data-hour='5'],
+.wrapper[data-hour='6'],
+.wrapper[data-hour='7'] {
+  background-color: #2196F3;
+  color: #2F2F2F;
+}
+
+.wrapper[data-hour='8'],
+.wrapper[data-hour='9'],
+.wrapper[data-hour='10'],
+.wrapper[data-hour='11'] {
+  background-color: #03A9F4;
+  color: #2F2F2F;
+}
+
+.wrapper[data-hour='12'],
+.wrapper[data-hour='13'],
+.wrapper[data-hour='14'],
+.wrapper[data-hour='15'] {
+  background-color: #009688;
+  color: #2F2F2F;
+}
+
+.wrapper[data-hour='16'],
+.wrapper[data-hour='17'],
+.wrapper[data-hour='18'],
+.wrapper[data-hour='19'] {
+  background-color: #009688;
+  color: #fff;
+}
+
+.wrapper[data-hour='20'],
+.wrapper[data-hour='21'],
+.wrapper[data-hour='22'],
+.wrapper[data-hour='23'] {
+  background-color: #673AB7;
+  color: #fff;
+}
+
+.weather-icon {
+  font-size: 125px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  font-size: 64px;
+}
+
+.city {
+  margin: 0;
+  font-size: 28px;
+  text-transform: uppercase;
+}
